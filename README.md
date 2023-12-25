@@ -1,0 +1,2 @@
+# wendo.logs
+WLogs
