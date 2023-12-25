@@ -5,10 +5,10 @@ from baselogger import BaseLogger
 
 class TelegramLoggerEntity(BaseLogger):
     def __init__(self, token, **kwargs):
-        self.token = token
-        self.web_preview = True
-        self.notification = True
-        self.parse_mode = 'HTML'
+        self.token: str = token
+        self.web_preview: bool = True
+        self.notification: bool = True
+        self.parse_mode: str = 'HTML'
 
         if kwargs['disable_web_page_preview']:
             self.disabled_web_preview = True
