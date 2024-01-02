@@ -21,8 +21,3 @@ class BaseLogger(ABC):
     @abstractmethod
     def critical(self):
         pass
-
-    def update_settings(self, **kwargs):
-        for k, v in kwargs.items():
-            if hasattr(self, k):
-                setattr(self, k, v)
